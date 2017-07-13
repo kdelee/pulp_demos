@@ -110,6 +110,7 @@ clean()
     deactivate
     cd ~
     rm -rf ~/tmp
+    pulp-admin python repo delete --repo-id ${REPO_ID}
 }
 
 clear
